@@ -34,7 +34,7 @@ class App extends Component {
     
     
     render() {
-        const { searchfield, robots } = this.state // destructuring}
+        const { searchfield, robots } = this.state // destructuring
         const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         }) 
